@@ -1,0 +1,382 @@
+@import "vars"
+
+// Шрифты //
+@import "fonts"
+
+// База //
+html, body
+	width: 100%
+	height: 100%
+h1, h2, h3, h4, h5, h6, ul, p
+	padding: 0
+	margin: 0
+
+ul
+	list-style: none
+\:focus, \:active
+	outline: 0 !important
+a, a:focus, a:active, a:hover
+	text-decoration: none !important
+*
+	box-sizing: border-box
+
+body
+	font-weight: 400
+	font-size: 16px
+.header
+	background-image: url(../img/coffee-shop.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	height: 700px
+.container
+	width: 1270px
+	margin: 0 auto
+.menu
+	padding-top: 4px
+	height: 100px
+	background: rgba(1,0,0,0.35)
+	&-list
+		display: flex
+		justify-content: center
+		align-items: center
+		&__link
+			color: #ffffff
+			font-family: 'Playfair Display'
+			font-size: 16px
+			font-weight: 700
+			&:hover
+				color: #f5d76e
+
+		&__li
+			&:nth-child(1), &:nth-child(4), &:nth-child(5)
+				margin-right: 15px
+			&:nth-child(2)
+				margin-right: 38px
+			&:nth-child(4)
+				margin-left: 38px
+.welcome
+	margin-top: 169px
+	padding-left: 166px
+	&-title
+		color: #f5d76e
+		font-family: 'Playfair Display'
+		font-size: 48px
+		font-weight: 700
+	&-descr
+		width: 440px
+		color: #ffffff
+		font-family: 'Lato'
+		font-size: 16px
+		font-weight: 500
+		line-height: 24px
+		word-wrap: break-word
+	&-btn
+		margin-top: 38px
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 185px
+		height: 54px
+		border: 2px solid #ffffff
+		background-color: transparent
+		color: #ffffff
+		font-family: 'Lato'
+		font-size: 13px
+		font-weight: 700
+		line-height: 24px
+		&:hover
+			color: #f5d76e
+			border: 2px solid #f5d76e
+.desc
+	&-title
+		margin-top: 98px
+		text-align: center
+		color: #2f2f2f
+		font-family: 'Playfair Display'
+		font-size: 32px
+		font-weight: 700
+	&-desc
+		width: 753px
+		margin: 0 auto
+		margin-top: 32px
+		text-align: center
+		color: #28211f
+		font-family: 'Lato'
+		font-size: 16px
+		line-height: 24px
+		font-weight: 400
+	&-img
+		margin-top: 80px
+		text-align: center
+.carte
+	margin-top: 80px
+	&-title
+		margin-bottom: 59px
+		text-align: center
+		color: #2f2f2f
+		font-family: 'Playfair Display'
+		font-size: 32px
+		font-weight: 700
+.range
+	display: flex
+	justify-content: space-between
+	&-item
+		&:hover .range-item__title
+			top: 20px
+			transition: 1s linear
+		&__title
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			color: #000000
+			font-family: 'Playfair Display'
+			font-size: 40px
+			font-weight: 700
+			line-height: 24px
+			text-transform: uppercase
+
+		&__img
+			position: relative
+			width: 398px
+			height: 295px
+			img
+				max-width: 100%
+				opacity: 0.15
+				&:hover
+					opacity: 0.75
+
+		&__desc
+			padding-top: 44px
+			display: flex
+			justify-content: space-around
+		&__li, &__li2
+			color: #28211f
+			font-size: 16px
+			line-height: 28px
+		&__li
+			font-family: 'Lato'
+			font-weight: 700
+		&__li2
+			font-family: 'Lato'
+			font-weight: 500
+.carte-btn
+	margin: 0 auto
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 57px
+	width: 232px
+	height: 54px
+	border: 2px solid #39312f
+	background-color: transparent
+	color: #39312f
+	font-family: 'Lato'
+	font-size: 13px
+	font-weight: 700
+	line-height: 24px
+	text-transform: uppercase
+	&:hover
+		background: #f5d76e
+.carte-img
+	text-align: center
+	margin-top: 94px
+.test
+	margin-top: 79px
+	&-icon
+		margin-top: 81px
+	&-title
+		color: #28211f
+		text-align: center
+		font-family: 'Playfair Display'
+		font-size: 32px
+		font-weight: 700
+		line-height: 24px
+		text-transform: uppercase
+	&-wrap
+		margin-top: 60px
+		height: 425px
+		background-color: #39312f
+
+	&-img
+		width: 65%
+		display: inline-block
+	&-icon
+		text-align: center
+	&-slider
+
+		vertical-align: top
+		position: relative
+		height: 425px
+		text-align: center
+		&-items
+			display: inline-block
+			width: 34%
+
+		&__img
+			display: inline-block
+			margin-top: 98px
+			width: 84px
+			height: 84px
+			img
+				border-radius: 50%
+				max-width: 100%
+		&__name
+			margin-top: 7px
+			color: #f5d76e
+			font-family: 'Playfair Display'
+			font-size: 20px
+			font-weight: 700
+		&__desc
+			margin-top: 10px
+			display: inline-block
+			width: 262px
+			color: #ffffff
+			font-family: Lato
+			font-size: 16px
+			font-weight: 400
+			line-height: 21px
+		&__numb
+			position: absolute
+			top: 32px
+			left: 30px
+			opacity: 0.03
+			color: #ffffff
+			font-family: 'Playfair Display'
+			font-size: 90px
+			font-weight: 700
+		&__mark
+			position: absolute
+			bottom: 24px
+			right: 32px
+
+.location
+	margin-top: 220px
+	margin-bottom: 15px
+	&-title
+		text-align: center
+		color: #28211f
+		font-family: 'Playfair Display'
+		font-size: 32px
+		font-weight: 700
+		line-height: 24px
+		text-transform: uppercase
+	&-map
+		margin-top: 60px
+		position: relative
+		width: auto
+		height: 425px
+	&-info
+		position: absolute
+		padding-left: 50px
+		padding-top: 59px
+		width: 458px
+		height: 425px
+		background-color: #f5d76e
+		z-index: 999
+		&__loc, &__hours, &__happy
+			color: #28211f
+			font-family: 'Playfair Display'
+			font-size: 20px
+			font-weight: 700
+		&__desc
+			width: 351px
+			margin-top: 20px
+			color: #28211f
+			font-family: 'Lato'
+			font-size: 16px
+			font-weight: 400
+			line-height: 24px
+			margin-bottom: 30px
+		&__wrap
+			margin-top: 18px
+			margin-bottom: 30px
+			display: flex
+			justify-content: flex-start
+		&__ul, &__ul-time, &__happytime, &__happydate
+			color: #28211f
+			font-family: 'Lato'
+			font-size: 16px
+			line-height: 28px
+		&__ul, &__happydate
+			font-weight: 700
+		&__ul-time, &__happytime
+			margin-left: 29px
+			font-weight: 400
+		&__happy-wrap
+			margin-top: 18px
+
+.footer
+	padding-top: 93px
+	height: 321px
+	background-color: #39312f
+	text-align: center
+	&-text
+		margin-top: 44px
+		color: #ffffff
+		font-family: 'Lato'
+		font-size: 16px
+		font-weight: 700
+		line-height: 24px
+
+.social__icon
+	display: inline-block
+	margin-right: 28px
+.social-link
+	font-size: 20px
+	width: 26px
+	height: 20px
+	color: #ffffff
+	&:hover
+		color: #f5d76e
+
+.my-dots
+	position: absolute
+	bottom: 51px
+	display: block
+	width: 100%
+	padding: 0
+	list-style: none
+	text-align: center
+
+.my-dots li
+	position: relative
+	display: inline-block
+	width: 20px
+	height: 20px
+	margin: 0 5px
+	padding: 0
+	cursor: pointer
+
+
+.my-dots li button
+	font-size: 0
+	line-height: 0
+	display: block
+	width: 20px
+	height: 20px
+	padding: 5px
+	cursor: pointer
+	color: transparent
+	border: 0
+	outline: none
+	background: transparent
+
+.my-dots li button:before
+	line-height: 20px
+	position: absolute
+	top: 0
+	left: 0
+	width: 20px
+	height: 20px
+	content: url('../img/Ellipse_2_copy.png')
+	text-align: center
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.my-dots li.slick-active button:before
+	content: url("../img/Ellipse_2.png")
+	top: -1px
+// Адаптив //
+@import "media"
